@@ -32,10 +32,10 @@ public class ChamadosService
         {
             DataAbertura = DateTime.UtcNow.AddHours(-3),
             Email = requisicaoSuporte.Email,
-            //DescritivoRequisicao = requisicaoSuporte.Email, // FIXME: Simulacao de falha
-            DescritivoRequisicao = requisicaoSuporte.DescritivoRequisicao,
-            //Solucionado = true // FIXME: Simulacao de falha
-            Solucionado = false            
+            DescritivoRequisicao = requisicaoSuporte.Email, // FIXME: Simulacao de falha
+            //DescritivoRequisicao = requisicaoSuporte.DescritivoRequisicao,
+            Solucionado = true // FIXME: Simulacao de falha
+            //Solucionado = false            
         };
         _context.Chamados.Add(chamado);
         _context.SaveChanges();
