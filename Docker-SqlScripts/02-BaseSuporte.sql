@@ -15,3 +15,5 @@ ALTER TABLE [dbo].[Chamados] ADD  CONSTRAINT [PK_Chamados] PRIMARY KEY CLUSTERED
 	[Id] ASC
 )
 GO
+
+PRINT 'Tabela dbo.Chamados criada com sucesso!'
